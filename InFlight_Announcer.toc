@@ -1,0 +1,8 @@
+## Interface: 120001
+## Title: InFlight_Announcer
+## Author: packet-nova
+## Notes: A plugin for InFlight that automatically announces flight time when in a party.
+## Version: 1.0
+## Dependencies: InFlight   
+
+InFlight_Announcer.lua
