@@ -1,8 +1,8 @@
 local f = CreateFrame("Frame")
 local announced = false
 
-f:RegisterEvent("PLAYER_CONTROL_LOST")  -- flight starts
-f:RegisterEvent("PLAYER_CONTROL_GAINED") -- flight ends
+f:RegisterEvent("PLAYER_CONTROL_LOST")
+f:RegisterEvent("PLAYER_CONTROL_GAINED")
 
 f:SetScript("OnEvent", function(self, event)
     if not InFlight then return end
@@ -26,6 +26,6 @@ f:SetScript("OnEvent", function(self, event)
             end
         end
     elseif event == "PLAYER_CONTROL_GAINED" then
-        announced = false  -- reset for next flight
+        announced = false
     end
 end)
